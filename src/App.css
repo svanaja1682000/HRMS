@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: azure;
+    font-weight: bolder;
+    a{
+        padding-top: 15px;
+        color: black;
+    }
+    .borderLess{
+        border: none;
+        cursor: pointer;
+        background: none;
+        font-weight: 600;
+        color: gray;
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table, th, td {
+    border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.add-new-employee{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    label {
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+      input {
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 5px;
+      }
+}
+.emp-data-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.add-new-emp-container {
+    display: flex;
+    justify-content: center;    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sections{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
